@@ -48,7 +48,7 @@ window.onload = function() {
 		 //        if (z[0] === '!') continue;
 		 //    	// console.log(y + "!" + z + "=" + JSON.stringify(worksheet[z].v));
 		 //    	myArray.push(JSON.stringify(worksheet[z]));
-	  //    	}
+	  //    	} 
 	 	// });
 
 	 	// for (var j=0; j < myArray.length; j++) {
