@@ -3,7 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>ReadInExcel</title>
-
+	<!-- stylesheet -->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<!-- jquery library -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<!-- https://github.com/SheetJS/js-xlsx/blob/master/jszip.js -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
 	<!-- https://github.com/SheetJS/js-xlsx/blob/master/xlsx.js -->
@@ -12,8 +15,43 @@
 
 </head>
 <body>
+	<div id="bioContainer">
+		<div id="name"></div>
+		<div id="class"></div>
+		<div id="height"></div>
+		<div id="weight"></div>
+		<div id="gym"></div>
+		
+		<div id="midContainer">
 
-	<div id="list"> </div>
-	
+			<div id="left">
+				<div id="bdayTag">Birthdate</div>
+				<div id="countryTag">Country</div>
+				<div id="nicknameTag">Nickname</div>
+				<div id="stanceTag">Stance</div>
+				<div id="reachTag">Reach</div>
+				<div id="disciplineTag">Discipline</div>
+			</div>
+
+			<div id="right">
+				<div id="bday"></div>
+				<div id="country"></div>
+				<div id="nickname"></div>
+				<div id="stance"></div>
+				<div id="reach"></div>
+				<div id="discipline"></div>
+			</div>
+			
+		</div>
+
+		<div id="promotor"></div>
+
+		<div id="wins"></div>
+		<div id="losses"></div>
+		<div id="draws"></div>
+		<div id="tko"></div>
+		<div id="submission"></div>
+		<div id="nextFight"></div>
+	</div>
 </body>
 </html>
