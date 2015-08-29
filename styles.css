@@ -2,3 +2,14 @@
 	border: 1px solid orange;
 }
 
+.inlineBlock {
+	display: inline-block;
+}
+
+#left {
+	/*width: 200px;*/
+}
+
+#right {
+	/*width: 300px;*/
+}
