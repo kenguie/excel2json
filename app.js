@@ -1,8 +1,6 @@
 window.onload = function() {
 
-	var worksheet;
-	var myArray = [];
-	var myParsed = {};
+	// var workbook;  // when i try to make this a declared global var, it fails
 	var target = document.getElementById("list");
 	var br = document.createElement("br");
 
@@ -22,7 +20,7 @@ window.onload = function() {
 	  var bstr = arr.join("");
 
 	  /* Call XLSX */
-	  var workbook = XLSX.read(bstr, {type:"binary"});
+	  workbook = XLSX.read(bstr, {type:"binary"});  // want this to be a global var but doesnt seem to work
 
 	  /* DO SOMETHING WITH workbook HERE */
 	  // console.log(workbook);
@@ -39,6 +37,17 @@ window.onload = function() {
 	  }
 
 	  console.log(to_json(workbook));
+	  outputToScreen(workbook);
+
+	  function outputToScreen(workbook) {
+	  	for (var i = 0; i < workbook.Strings.length; i++) {
+		 		var text = document.createTextNode(workbook.Strings[i].t);
+		 		target.appendChild(text);
+		 		target.appendChild(br); 
+		 	};
+	  };
+
+// outputToScreen(result);
 
 	  // var sheet_name_list = workbook.SheetNames;
 	 	// sheet_name_list.forEach(function(y) { /* iterate through sheets */
@@ -48,7 +57,7 @@ window.onload = function() {
 		 //        if (z[0] === '!') continue;
 		 //    	// console.log(y + "!" + z + "=" + JSON.stringify(worksheet[z].v));
 		 //    	myArray.push(JSON.stringify(worksheet[z]));
-	  //    	} 
+	  //    	}
 	 	// });
 
 	 	// for (var j=0; j < myArray.length; j++) {
@@ -69,4 +78,4 @@ window.onload = function() {
 	oReq.send();
 
 
-};
+}; 
