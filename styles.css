@@ -33,6 +33,15 @@
 	text-align: left;
 }
 
+#infoTable table {
+	border-collapse: collapse;
+}
+
+#infoTable th {
+	background-color: #948F84;
+	color: white;
+}
+
 #sharingIcons {
 	float: right;
 }
