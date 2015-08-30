@@ -12,6 +12,11 @@
 	width: 300px;
 }
 
+#image img {
+	height: 250px;
+	width: 300px;
+}
+
 #bioContainer {
 	vertical-align: top;
 }
