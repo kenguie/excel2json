@@ -16,16 +16,18 @@
 </head>
 <body>
 	<div id="bioContainer">
-		<div id="name"></div>
-		<div id="class"></div>
 
-		<div id="topBio">
-			<div id="height" class="inlineBlock"></div>
-			<div id="weight" class="inlineBlock"></div>
-			<div id="gym" class="inlineBlock"></div>
-		</div>
+		<div id="image" class="inlineBlock"></div>
 		
-		<div id="midContainer">
+		<div id="midContainer" class="inlineBlock">
+			<div id="topBio" class="inlineBlock">
+				<div id="name" class="inlineBlock"></div>
+				<div id="flag" class="inlineBlock"> flag here </div>
+				<div id="class"></div>
+				<div class="inlineBlock"><span id="height"></span></div>
+				<div class="inlineBlock"><span id="weight"></span>lbs | </div>
+				<div id="gym" class="inlineBlock"></div>
+			</div>
 
 			<div id="left" class="inlineBlock">
 				<div id="bdayTag">Birthdate</div>
@@ -37,7 +39,8 @@
 			</div>
 
 			<div id="right" class="inlineBlock">
-				<div id="bday"></div>
+				<div id="bday" class="inlineBlock"></div>
+				<div class="inlineBlock">(Age:<span id="age"></span>)</div>
 				<div id="country"></div>
 				<div id="nickname"></div>
 				<div id="stance"></div>
@@ -45,16 +48,32 @@
 				<div id="discipline"></div>
 			</div>
 
+			<div id="rightBlock" class="inlineBlock">
+				<div id="info">Career Stats<span id="sharingIcons">Sharing icons</span></div>
+				<div id="infoTable">
+					<table>
+						<th>Wins</th>
+						<th>Losses</th>
+						<th>Draws</th>
+						<th>(T)KO</th>
+						<th>Submission</th>
+						<tr>
+							<td id="wins"></td>
+							<td id="losses"></td>
+							<td id="draws"></td>
+							<td id="tko"></td>
+							<td id="submission"></td>
+						</tr>
+					</table>
+				<div id="nextFight">Next fight info</div>	
+				<div id="nextFight">Next fight info 2</div>
+				<div id="nextFight">Next fight info 3</div>
+				</div>
+			</div>
+
 		</div>
+		<div>Promotor of record <span id="promotor"></span> logo</div>
 
-		<div id="promotor"></div>
-
-		<div id="wins"></div>
-		<div id="losses"></div>
-		<div id="draws"></div>
-		<div id="tko"></div>
-		<div id="submission"></div>
-		<div id="nextFight"></div>
 	</div>
 </body>
 </html>

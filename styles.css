@@ -6,10 +6,19 @@
 	display: inline-block;
 }
 
-#left {
-	/*width: 200px;*/
+#image {
+	height: 200px;
+	width: 300px;
 }
 
-#right {
-	/*width: 300px;*/
+#rightBlock {
+	text-align: center;
+}
+
+#info {
+	text-align: left;
+}
+
+#sharingIcons {
+	float: right;
 }

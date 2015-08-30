@@ -47,6 +47,7 @@ $(document).ready(function() {
 			  $("#weight").append(short.B10.v);
 			  $("#gym").append(short.B11.v);
 			  $("#bday").append(short.B15.v);
+			  $("#age").append(short.B16.v);
 			  $("#country").append(short.B6.v);
 			  $("#nickname").append(short.B17.v);
 			  $("#stance").append(short.B18.v);
