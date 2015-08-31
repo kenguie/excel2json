@@ -41,6 +41,8 @@ $(document).ready(function() {
 		  // So I want to split this into a function of it's own but it seems jquery and workbook can't be accessed outside this .onload function
 			(function output() {  
 				var short = workbook.Sheets.Sheet1;
+				var target = document.getElementById("img");
+				target.setAttribute("src", short.B4.v);
 			  $("#name").append(short.B3.v);
 			  $("#class").append(short.B8.v);
 			  $("#height").append(short.B9.v);
